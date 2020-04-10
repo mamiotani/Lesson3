@@ -1,4 +1,4 @@
-package ip.techacademy.mami.ootani.kotlinlog
+package jp.techacademy.mami.ootani
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -12,13 +12,11 @@ class MainActivity : AppCompatActivity() {
 
         val dog = Dog("ポチ", 3)
 
-        dog.say()
-        Log.d("kotlintest", "犬の名前は" + dog.name + "です。")
-        Log.d("kotlintest", "犬の年齢は" + dog.age + "歳です。")
+        dog.move()
 
-        val dog2 = Dog("ハチ", 10)
-        dog2.say()
-        Log.d("kotlintest", "犬の名前は" + dog2.name + "です。")
-        Log.d("kotlintest", "犬の年齢は" + dog2.age + "歳です。")
+        val hunman = Human("大谷真実", 26,  "ボランティア活動")
+
+        human.say()
+        human.think()
     }
 }
